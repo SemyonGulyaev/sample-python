@@ -6,3 +6,5 @@ app = Flask(__name__)
 def index():
     return "Hello this is the new version!"
 
+if __name__ == '__main__':
+    app.run(threaded=True, port=80)
